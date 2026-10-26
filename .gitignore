@@ -1,0 +1,110 @@
+# ==============================================================================
+# Git Ignore for Digital Systems 1 (Computer Assignments)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Intel Quartus Prime
+# ------------------------------------------------------------------------------
+# Database and compilation directories
+db/
+incremental_db/
+output_files/
+simulation/
+hc_output/
+hps/
+
+# Quartus generated database, report, and log files
+*.qdb
+*.cdb
+*.ddb
+*.hdb
+*.rdb
+*.tdb
+*.rcfdb
+*.ammdb
+*.logdb
+*.idb
+*.kpt
+*.hsd
+*.qmsg
+*.smsg
+*.rpt
+*.summary
+*.done
+*.jdi
+*.pin
+*.sof
+*.pof
+*.rbf
+*.ttf
+*.dfp
+*.dpi
+*.bpm
+*.sci
+*.ipinfo
+*.sig
+*.csd
+*.hif
+*.xrf
+*.hier_info
+*.db_info
+*.hb_info
+*.syn_hier_info
+*.tmw_info
+
+# Quartus user settings / workspace (preserves machine-specific window states)
+*.qws
+
+# Quartus gate-level netlists & timing files generated during compilation
+*.vo
+*.sdo
+*.sft
+
+# ------------------------------------------------------------------------------
+# ModelSim / QuestaSim Simulation Artifacts
+# ------------------------------------------------------------------------------
+work/
+transcript
+vsim.wlf
+*.wlf
+wlft*
+vsim_stacktrace.vstf
+_info
+_vmake
+*.qtl
+*.qpg
+
+# ------------------------------------------------------------------------------
+# Synthesis Binaries & Log Histories (Yosys / ABC)
+# ------------------------------------------------------------------------------
+abc.history
+*.exe
+*.dll
+*.so
+*.dylib
+
+# ------------------------------------------------------------------------------
+# Course Submission Archives (Redundant Compressed Files)
+# ------------------------------------------------------------------------------
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ------------------------------------------------------------------------------
+# Backup and Temporary Files
+# ------------------------------------------------------------------------------
+*.bak
+*.orig
+*~
+*.tmp
+*.temp
+
+# ------------------------------------------------------------------------------
+# Word Documents & Drafts (PDF reports kept)
+# ------------------------------------------------------------------------------
+*.docx
+*.doc
+~$*.docx
+~$*.doc

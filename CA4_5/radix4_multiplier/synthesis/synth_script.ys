@@ -1,0 +1,18 @@
+read_verilog -sv ../rtl/radix4_multiplier.sv
+read_verilog -sv ../rtl/multiplierDp.sv
+read_verilog -sv ../rtl/controller.sv
+read_verilog -sv ../rtl/Alu.sv
+read_verilog -sv ../rtl/PshiftReg.sv
+read_verilog -sv ../rtl/AshiftReg.sv
+read_verilog -sv ../rtl/Bregister.sv
+read_verilog -sv ../rtl/coutner.sv
+
+synth -top radix4_multiplier_top
+
+dfflibmap -liberty library.lib
+abc -liberty library.lib
+
+clean
+
+write_verilog -noattr synth_radix4_multiplier_top.v
+stat -liberty library.lib

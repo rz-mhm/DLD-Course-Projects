@@ -1,0 +1,16 @@
+# Read SystemVerilog files
+read_verilog -sv ../behavioral/alu_behav.sv
+
+# Generic synthesis
+synth -top alu_behav
+
+# Map to custom cell library
+dfflibmap -liberty mycells.lib
+abc -liberty mycells.lib
+clean
+
+# Print statistics
+stat
+
+# Write the synthesized netlist
+write_verilog -noattr alu_behav_netlist.v
